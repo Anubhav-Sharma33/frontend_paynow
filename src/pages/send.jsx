@@ -28,7 +28,7 @@ const Send = () => {
   const transactionHandler = async () => {
 
     const response = await axios.post(
-      `http://localhost:3000/api/v1/account/transfer`,
+      `backend-paynow-vfom.vercel.app/api/v1/account/transfer`,
       {
           firstName : data.firstName,
           to : data.id,
