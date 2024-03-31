@@ -13,7 +13,7 @@ const UserList = () => {
 
   const fetchUserList = async () => {
     const response = await axios.get(
-      `backend-paynow-vfom.vercel.app/api/v1/user/bulk?filter=${searchFilter}`,
+      `https://backend-paynow-vfom.vercel.app/api/v1/user/bulk?filter=${searchFilter}`,
       {
         headers: {
           authorization: token,
